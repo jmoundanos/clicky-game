@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "image": "assets/images/Eleven_(Stranger_Things).jpg",
+        "character":"Eleven"
+    },
+    {
+        "id": 2,
+        "image": "/assets/images/Dustin_StrangerThings.png",
+        "character":"Dustin"
+    },
+    {
+        "id": 3,
+        "image": "/assets/images/Mike_StrangerThings.png",
+        "character":"Mike"
+    },
+    {
+        "id": 4,
+        "image": "/assets/images/Steve_StrangerThings.png",
+        "character":"Steve"
+    },
+    {
+        "id": 5,
+        "image": "/assets/images/Nancy_StrangerThings.jpg",
+        "character":"Nancy"
+    },
+    {
+        "id": 6,
+        "image": "/assets/images/Will_StrangerThings.png",
+        "character":"Will"
+    },
+    {
+        "id": 7,
+        "image": "/assets/images/Lucas_StrangerThings.png",
+        "character":"Lucas"
+    },
+    {
+        "id": 8,
+        "image": "/assets/images/Max_StrangerThings.png",
+        "character":"Max"
+    },
+    {
+        "id": 9,
+        "image": "/assets/images/JimHopper_StrangerThings.png",
+        "character":"Hopper"
+    },
+    {
+        "id": 10,
+        "image": "/assets/images/Joyce_StrangerThings.png",
+        "character":"Joyce"
+    },
+    {
+        "id": 11,
+        "image": "/assets/images/Jonathan_StrangerThings.jpg",
+        "character":"Jonathan"
+    },
+    {
+        "id": 12,
+        "image": "/assets/images/Billy_StrangerThings.png",
+        "character":"Billy"
+    }
+]
