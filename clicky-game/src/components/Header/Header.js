@@ -1,12 +1,13 @@
 import React from "react";
 import "./Header.css";
 
+
 const Header = props => (
     <div className="container">
-        <div className="title">{props.children}</div>
-        <div className="message"><h2>Click an image to get a point, but don't click an image more than once!</h2></div>
-        <div className="score"><h3>Score: {props.score}</h3></div>
-        <div className="topScore"><h3>Top Score: {props.topScore}</h3></div>
+        <div className="title"><img alt="Stranger Things Logo" src={'/assets/images/logo.png'}></img></div>
+        <div className="message"><h4>Click an image to get a point, but don't click an image more than once!</h4></div>
+        <div className="score"><h5>Score: {props.score}</h5></div>
+        <div className="topScore"><h5>Top Score: {props.topScore}</h5></div>
     </div>
 );
 

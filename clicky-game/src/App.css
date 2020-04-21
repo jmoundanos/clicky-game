@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.footer{
+  text-align: center;
+  color: whitesmoke;
+  background-color:#00121a;
+  padding: 15px;
+}
+.container{
+ height: 100%;
+}
+.alert{
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}

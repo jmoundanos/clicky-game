@@ -7,20 +7,19 @@
 }
 .score{
     float: right;
-    padding: 25px;
+    padding: 15px;
     color:#c7050b;
 }
 .topScore{
     float: right;
-    padding: 25px;
+    padding: 15px;
     color:#c7050b;
 }
 .title {
     width: 100%;
     text-align: center;
-    font-size: 3rem;
-    text-decoration: underline;
-    color:#c7050b;
-    margin-bottom: 50px;
-  }
-  
+    margin-bottom: 20px; 
+}
+.img{
+    margin-top: 10px;
+}

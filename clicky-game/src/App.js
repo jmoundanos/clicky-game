@@ -30,10 +30,12 @@ class App extends Component {
     let score = this.state.score;
     let topScore = this.state.topScore;
     this.setState({
-      showAlert: 0
+      showAlert: 0,
+      showSuccess: 0
     });
      // if the clicked image has an id that exists
      if (clickedImages.indexOf(id) === -1) {
+
       // push that id into the array to store the ids
       clickedImages.push(id);
       //console.log(clickedImages);
@@ -52,11 +54,8 @@ class App extends Component {
        //if player does not get to 12, player loses and game restarts
       this.setState({
         score: 0,
+        showAlert: 1,
         clickedImages: []
-      });
-      //console.log("duplicate");
-      this.setState({
-        showAlert: 1
       });
     }
     //highest score is displayed as top score
@@ -79,35 +78,38 @@ class App extends Component {
 
 render() {
   return (
-    // <div className="container">
-    //     <div
-    //       className="alert alert-danger"
-    //       style={{ opacity: this.state.showAlert }}
-    //     >
-    //       You clicked on this already, try again...
-    //       </div>
-    //     <div
-    //       className="alert alert-success"
-    //       style={{ opacity: this.state.showSuccess }}
-    //     >
-    //       Brilliant, you haven't clicked on duplicates!
-    //       </div>
+    <div className="container">
     <Wrapper>
+      <div
+          className="alert alert-danger"
+          style={{opacity: this.state.showAlert }}
+        >
+          You clicked on this already, try again...
+          </div>
+        <div
+          className="alert alert-success"
+          style={{opacity: this.state.showSuccess }}
+        >
+         Winner! You didn't click a card more than once!
+          </div>
+   
       <Header
         score={this.state.score}
-        topScore={this.state.topScore}>
-        Stranger Things Memory Game
-        </Header>
-       {this.state.data.map(data => ( 
+        topScore={this.state.topScore}
+        message={this.state.message}/>
+        
+        {this.state.data.map(data => ( 
           <Cards 
           key={data.id}
           id={data.id}
           image={data.image}
           clickedCard={this.clickedCard}/>
          ))} 
+         
      </Wrapper>
-    
-      );
+     <div className="footer"><h6>Created By Jennifer Moundanos</h6></div>
+     </div>
+    );
   }
 }      
       
