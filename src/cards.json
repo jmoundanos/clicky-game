@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "assets/images/Eleven_(Stranger_Things).jpg",
+        "image": "public/assets/images/Eleven_(Stranger_Things).jpg",
         "character":"Eleven"
     },
     {
